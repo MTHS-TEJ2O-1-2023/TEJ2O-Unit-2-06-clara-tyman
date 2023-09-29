@@ -11,15 +11,13 @@ basic.showIcon(IconNames.Happy)
 pins.digitalWritePin(DigitalPin.P16, 0)
 
 // Light on
-input.onButtonPressed(Button.A, function() {
-    basic.showIcon(IconNames.Yes)
+input.onButtonPressed(Button.A, function () {
+  basic.showIcon(IconNames.Yes)
   pins.digitalWritePin(DigitalPin.P16, 1)
-
 })
 
 // Light off
-input.onButtonPressed(Button.B, function() {
+input.onButtonPressed(Button.B, function () {
   basic.showIcon(IconNames.No)
   pins.digitalWritePin(DigitalPin.P16, 0)
-
 })
